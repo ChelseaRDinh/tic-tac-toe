@@ -24,8 +24,17 @@ class Square extends React.Component {
 }
 
 class Board extends React.Component {
+  
+  {/*Initialize constructor to produce empty board*/}
+  constructor(props) {
+	  super(props);
+	  this.state = {
+		  squares: Array(9).fill(null),
+	  };
+  }
   renderSquare(i) {
-    return <Square value={i} />;
+    return <Square value=
+	{this.state.squares[i]} />;
   }
 
   render() {
