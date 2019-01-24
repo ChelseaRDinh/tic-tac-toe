@@ -37,7 +37,7 @@ class Board extends React.Component {
 			value={this.state.squares[i]}
 			onClick={() =>
 			this.handleClick(i)}
-			/>;
+			/>
 			);
   }
 
